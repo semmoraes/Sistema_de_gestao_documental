@@ -1,0 +1,311 @@
+/* Estilização base para o corpo e html */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  border-bottom: 0;
+}
+
+/* Estilos para o cabeçalho do container */
+.container-header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilização do Menu Lateral */
+.menu-lateral {
+  background: linear-gradient(to bottom, #666, #333);
+  width: 300px;
+  padding: 20px;
+  transition: 10ms;
+}
+
+.menu-lateral i {
+  margin-right: 5%;
+  transition: 10ms;
+}
+
+.menu-lateral.escondido {
+  display: none;
+  transition: 10ms;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-lateral ul li {
+  margin-bottom: 5px;
+}
+
+.menu-lateral ul li a {
+  display: block;
+  color: white;
+  text-decoration:solid;
+  padding: 10px;
+}
+
+.menu-lateral ul li a:hover {
+  background-color: #2228d1;
+}
+
+/* Estilização do Container */
+.container {
+  display: flex;
+  flex-grow: 1;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilização do Conteúdo Principal */
+.conteudo-principal {
+  flex-grow: 1;
+  background: linear-gradient(to right, #e0f0ff, #99ccff);
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(to bottom, #1565b9, #012952);
+  color: white;
+  text-align: center;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+/* Estilização do Rodapé */
+footer {
+  background: linear-gradient(to bottom, #04366b, #296196);
+  color: rgb(250, 246, 246);
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Estilização de Texto Centralizado */
+.texto-centralizado {
+  text-align: left;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+/* Estilização do Bloco de Documento */
+.bloco-documento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanhos iguais */
+  grid-template-rows: auto repeat(5, 1fr); /* 6 linhas */
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: left;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.bloco-documento h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.bloco-documento p {
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.botao-download {
+  display: inline-block;
+  padding: 12px 24px;
+  text-align: center;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.botao-download:hover {
+  background-color: #2980b9;
+}
+
+/* Estilização para o input de pesquisa */
+.search-box {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* Estilo para a caixa de usuário */
+.user-box {
+  display: none;
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  box-shadow: 0px 0px 5px #000;
+}
+
+/* Adicionar hover nos botões da navegação */
+.nav-left a {
+  padding: 10px;
+  background-color: #5625e8;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-left a:hover {
+  background-color: #555;
+}
+
+.nav-left {
+  margin-left: 40px;
+}
+
+/* Estilos para a barra de navegação superior */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left a,
+.nav-right button {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Estilos para os ícones */
+.search-icon,
+.login-icon {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #cccccc;
+}
+
+.cell {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+
+.indicador {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.botao-documento,
+.botao-evidencias {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.botao-documento:hover,
+.botao-evidencias:hover {
+  background-color: #007b9a;
+}
+
+/* Adiciona um pouco de espaço acima da tabela para não ficar grudada no topo da página */
+.table-responsive {
+  margin-top: 20px;
+}
+
+/* Altera a cor de fundo do cabeçalho da tabela */
+.table-dark th {
+  background-color: #4a4a4a;
+  color: #ffffff; /* Mover a cor de texto do cabeçalho da tabela aqui */
+}
+
+/* Adiciona um pouco de espaço entre os botões e o texto */
+.btn {
+  margin-right: 5px;
+}
+
+/* Estilos para os elementos de entrada */
+.input-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para o botão de alternar o menu */
+.toggle-menu {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  /* Estilos para o botão de alternar o menu quando o menu estiver fechado */
+  .toggle-menu.menu-escondido {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* O z-index garante que o botão fique acima dos outros elementos */
+  }
+  
+  

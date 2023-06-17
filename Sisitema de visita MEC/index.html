@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de gestão documental</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <!-- Container principal que engloba o cabeçalho -->
+    <div class="container-header">
+      <!-- Cabeçalho da página -->
+      <header>
+       <!-- Título principal -->
+        <h1>SGD INEP/MEC</h1>
+        
+        <!-- Navegação superior -->
+        <nav class="top-nav">
+          
+          <!-- Navegação esquerda com links -->
+          <div class="nav-left">
+            <a href="#">Site da IES</a>
+            <a href="#">CPA</a>
+            <a href="#">Biblioteca</a>
+            <a href="#">Redes Sociais</a>
+          </div>
+          
+          <!-- Navegação direita com caixa de pesquisa e login -->
+          <div class="nav-right">
+            <!-- Caixa de pesquisa --><input type="text" class="search-box" placeholder="Buscar..." />
+            <!-- Ícone de pesquisa --><button class="search-icon"><i class="fas fa-search"></i></button>
+            <!-- Caixa com nome de usuário logado --><div class="user-box"><span>Usuário Logado:</span></div>
+            <!-- Ícone de login / usuário --><button class="login-icon"><i class="fas fa-user"></i></button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Container para o menu lateral e conteúdo principal -->
+      <div class="container">
+
+        <!-- Menu lateral com navegação -->
+        <div class="menu-lateral">
+          <!-- Botão para alternar o menu lateral -->
+          <button id="toggle-menu" class="toggle-menu">☰</button>
+          <nav>
+            <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i> Página inicial</a></li>
+              <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Suporte</a></li>
+              <li><a href="documentos.html"><i class="fas fa-file-alt"></i> Documentos</a></li>
+              <li><a href="1st_dimensao.html"><i class="fas fa-layer-group"></i> Projeto Pedagógico</a></li>
+              <li><a href="2nd_dimensao.html"><i class="fa-solid fa-user-graduate"></i> Corpo docente</a></li>
+              <li><a href="3th_dimensao.html"><i class="fa-sharp fa-solid fa-school"></i> Infraestrutura</a></li>
+            </ul>
+          </nav>
+        </div>
+
+
+        <!-- Conteúdo principal da página -->
+        <div class="conteudo-principal">
+              <!-- Seção para o texto centralizado -->
+              <section class="texto-centralizado">
+              <p>No Brasil, todas as instituições de ensino superior precisam estar credenciadas junto ao Ministério da Educação (MEC) para operarem de acordo com a legislação educacional vigente. Credenciadas, essas instituições devem solicitar ao MEC autorizações para os cursos que pretendem oferecer. Nocaso das faculdades, elas precisam obter autorização de funcionamento para os cursos por meio de um processo que inclui a visita de dois avaliadores que analisam as condições do curso e depois receber nova visita para reconhecimento do curso. Já os centros universitários e universidades estão dispensados da visita de autorização, mas recebem essas visitas na ocasião do reconhecimento do curso, quando a primeira turma está próxima de concluir o programa. Independentemente do tipo de instituição, todas passam por visitas de reconhecimento de curso.</p>
+                <br>
+                <p>Estas visitas de autorização (caso de Faculdade) e reconhecimento (Faculdade/Centro/Universidade) têm características de uma auditoria, onde diversos aspectos do curso são minuciosamente avaliados. Há um grande volume de documentos requeridos e várias reuniões com membros da comunidade acadêmica. A gestão eficiente desses documentos é fundamental, pois um erro ou um documento faltante dentre os mais de 700 habitualmente entregues, pode impactar significativamente a avaliação do curso.</p>
+                <br>
+                <p>Pode-se imaginar esse processo avaliativo como uma fotografia que busca capturar a essência do curso em questão. Os documentos fornecidos representam os pixels dessa imagem, e cada documento ausente ou inadequado compromete a nitidez e a fidelidade da representação.</p>
+                <br>
+                <p>O volume e a complexidade dessa avaliação criam uma crescente ansiedade entre as instituições. Em 2022, por exemplo, foram realizadas mais de 8 mil visitas de avaliação, afetando milhões de estudantes, professores e funcionários administrativos.</p>
+                <br>
+                <p>Atualmente, 99% das instituições recorrem ao Google Drive para compartilhar os documentos com os avaliadores devido à falta de ferramentas especializadas. Entretanto, apesar de ser eficiente para o compartilhamento de documentos, o Google Drive não atende adequadamente às necessidades específicas desse processo avaliativo.</p>
+                <br>
+                <p>Com o intuito de superar esses desafios, este projeto propõe o desenvolvimento de uma plataforma especializada na gestão documental para as avaliações de cursos. O objetivo é não apenas disponibilizar os documentos de maneira eficiente, mas também organizá-los de acordo com os critérios avaliativos. Esta organização permitirá que os avaliadores acessem facilmente as evidências e comprovações necessárias, estando a um clique de serem validadas.</p>
+                <br>
+                <p>Além de melhorar a experiência dos avaliadores, esta plataforma busca também auxiliar as instituições de ensino a apresentarem de forma mais eficaz os frutos de seu árduo trabalho, contribuindo para um processo de avaliação mais justo e transparente</p>
+              </section>
+              
+<!-- Rodapé da página -->
+<footer>
+  <p>Site desenvolvido por Fabio Moraes &copy; 2023 SGD</p>
+</footer>
+<!-- Link para o arquivo de scripts JavaScript -->
+<script src="js/scripts.js"></script>
+<!-- Incluindo o JavaScript do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de gestão documental</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <!-- Container principal que engloba o cabeçalho -->
+    <div class="container-header">
+      <!-- Cabeçalho da página -->
+      <header>
+       
+        <!-- Título principal -->
+        <h1>SGD INEP/MEC</h1>
+        
+        <!-- Navegação superior -->
+        <nav class="top-nav">
+          
+          <!-- Navegação esquerda com links -->
+          <div class="nav-left">
+            <a href="#">Site da IES</a>
+            <a href="#">CPA</a>
+            <a href="#">Biblioteca</a>
+            <a href="#">Redes Sociais</a>
+          </div>
+          
+          <!-- Navegação direita com caixa de pesquisa e login -->
+          <div class="nav-right">
+            <!-- Caixa de pesquisa --><input type="text" class="search-box" placeholder="Buscar..." />
+            <!-- Ícone de pesquisa --><button class="search-icon"><i class="fas fa-search"></i></button>
+            <!-- Caixa com nome de usuário logado --><div class="user-box"><span>Usuário Logado:</span></div>
+            <!-- Ícone de login / usuário --><button class="login-icon"><i class="fas fa-user"></i></button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Container para o menu lateral e conteúdo principal -->
+      <div class="container">
+
+        <!-- Menu lateral com navegação -->
+        <div class="menu-lateral">
+          <!-- Botão para alternar o menu lateral -->
+          <button id="toggle-menu" class="toggle-menu">☰</button>
+          <nav>
+            <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i> Página inicial</a></li>
+              <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Suporte</a></li>
+              <li><a href="documentos.html"><i class="fas fa-file-alt"></i> Documentos</a></li>
+              <li><a href="1st_dimensao.html"><i class="fas fa-layer-group"></i> Projeto Pedagógico</a></li>
+              <li><a href="2nd_dimensao.html"><i class="fa-solid fa-user-graduate"></i> Corpo docente</a></li>
+              <li><a href="3th_dimensao.html"><i class="fa-sharp fa-solid fa-school"></i> Infraestrutura</a></li>
+            </ul>
+          </nav>
+        </div>
+
+
+        <!-- Conteúdo principal da página -->
+        <div class="conteudo-principal">
+              <!-- Seção para o texto centralizado -->
+              <section class="texto-centralizado">
+              <p>A primeira dimensão é dedicada a análise do projeto pedagógico do curso e ela é composta pelos seguintes indicadores</p>
+              </section>
+               <div class="container mt-5">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col"> Nº</th>
+                                <th scope="col">Título do Indicador</th>
+                                <th scope="col">Resumo</th>
+                                <th scope="col">Acesso ao Documento</th>
+                                <th scope="col">Acesso às Evidências</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Repetir essa estrutura de linha conforme necessário -->
+                            <tr>
+                                <td>
+                                    1
+                                  </td>
+                                <td>
+                                  Descritivo do conceito
+                                </td>
+                                <td>
+                                  Texto resumo
+                                </td>
+                                <td>
+                                    <a href="link-para-documento" class="btn btn-primary"><i class="fas fa-download"></i> Baixar Documento
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="link-para-evidencias" class="btn btn-success"><i class="fas fa-external-link-alt"></i> Acessar Evidências
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                              <td>
+                                  2
+                                </td>
+                              <td>
+                                Descritivo do conceito
+                              </td>
+                              <td>
+                                Texto resumo
+                              </td>
+                              <td>
+                                  <a href="link-para-documento" class="btn btn-primary"><i class="fas fa-download"></i> Baixar Documento
+                                  </a>
+                              </td>
+                              <td>
+                                  <a href="link-para-evidencias" class="btn btn-success"><i class="fas fa-external-link-alt"></i> Acessar Evidências
+                                  </a>
+                              </td>
+                          </tr>
+
+
+                          <tr>
+                            <td>
+                                3
+                              </td>
+                            <td>
+                              Descritivo do conceito
+                            </td>
+                            <td>
+                              Texto resumo
+                            </td>
+                            <td>
+                                <a href="link-para-documento" class="btn btn-primary"><i class="fas fa-download"></i> Baixar Documento
+                                </a>
+                            </td>
+                            <td>
+                                <a href="link-para-evidencias" class="btn btn-success"><i class="fas fa-external-link-alt"></i> Acessar Evidências
+                                </a>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                          <td>
+                              4
+                            </td>
+                          <td>
+                            Descritivo do conceito
+                          </td>
+                          <td>
+                            Texto resumo
+                          </td>
+                          <td>
+                              <a href="link-para-documento" class="btn btn-primary"><i class="fas fa-download"></i> Baixar Documento
+                              </a>
+                          </td>
+                          <td>
+                              <a href="link-para-evidencias" class="btn btn-success"><i class="fas fa-external-link-alt"></i> Acessar Evidências
+                              </a>
+                          </td>
+                      </tr>
+
+
+                      <tr>
+                        <td>
+                            5
+                          </td>
+                        <td>
+                          Descritivo do conceito
+                        </td>
+                        <td>
+                          Texto resumo
+                        </td>
+                        <td>
+                            <a href="link-para-documento" class="btn btn-primary"><i class="fas fa-download"></i> Baixar Documento
+                            </a>
+                        </td>
+                        <td>
+                            <a href="link-para-evidencias" class="btn btn-success"><i class="fas fa-external-link-alt"></i> Acessar Evidências
+                            </a>
+                        </td>
+                    </tr>
+                            <!-- Fim da estrutura de linha -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+<!-- Rodapé da página -->
+<footer>
+  <p>Site desenvolvido por Fabio Moraes &copy; 2023 SGD</p>
+</footer>
+<!-- Link para o arquivo de scripts JavaScript -->
+<script src="js/scripts.js"></script>
+<!-- Incluindo o JavaScript do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
