@@ -1,0 +1,126 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Estilo para o cabeçalho */
+.container-header {
+  background: linear-gradient(to bottom, darkblue, rgb(15, 2, 88));
+  text-align: center;
+  color: white;
+  padding: 1em;
+}
+
+/* Estilo para o container da navbar e do nav-right */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para a navbar */
+.navbar-horizontal {
+  display: flex;
+  padding: 3px;
+}
+
+.navbar-horizontal ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-horizontal ul li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-horizontal ul li a {
+  color: darkblue;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.navbar-horizontal ul li a:hover {
+  color: rgb(99, 99, 239);
+}
+
+/* Estilo para o formulário de busca e informações do usuário */
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para o container principal */
+.container {
+  background-color: rgb(243, 235, 235);
+  width: 100%;
+
+  padding: 2em;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background: linear-gradient(to bottom, darkblue, rgb(15, 2, 88));
+  text-align: center;
+  color: white;
+  padding: 1em;
+}
+
+/* Novo estilo para a navbar com Bootstrap */
+.navbar-nav .nav-link {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.container {
+  height: 100vh;
+}
+
+.container .row {
+  height: 100%;
+  align-items: center;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
